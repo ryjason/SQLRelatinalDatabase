@@ -1,36 +1,40 @@
 # Overview
 
-This is a Ralational Database project for a student records system. It develop a program to manage student records, including addding new students, updating grades, and generating reports. 
+This is a Relational Database project for a student records system. It develops a program to manage student records, including adding new students, updating grades, and generating reports. 
 
-Database is based on MySQL, all the functions of the program was writen in python. With mysql.connector to connect with the database which was created in MySQL workbench.
+The database is based on MySQL, and all the functions of the program were written in python. With mysql.connector to connect with the database which was created in MySQL workbench.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of how created the Relational Database.}
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/AkxKCqGOFTg?si=sFroWRwspWYpaXUa)
 
 # Relational Database
 
-{Describe the relational database you are using.}
+The database was called 'studentrecord', which contiens major,studentcontactinfo, studentgrade and studentname tables. All the tables use student id as the primary key to search and look up rows. 
 
-{Describe the structure (tables) of the relational database that you created.}
+It was a great practice to use/create a database and use Python to write functions for the database.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+-Vitual Studio Code
+-Python 3.11.7
+-MySQL Workbench
 
-{Describe the programming language that you used and any libraries.}
+Lanuage: 
+-Python: For the function
+-SQL: for creating database
+
+Library:
+-mysql.connector: Built connetion between Python and SQL 
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [Relational database](https://en.wikipedia.org/wiki/Relational_database)
+- [W3School](https://www.w3schools.com/sql/)
 
 # Future Work
 
 {Make a list of things that you need to fix, improve, and add in the future.}
 
-- Item 1
-- Item 2
-- Item 3
+- Generate a report for a major 
+- Improve user interface
