@@ -67,7 +67,7 @@ def functionSelections():
           4.Delete student
           5.Exit
           ''')
-        try:                                                                      #make sure only enter the numbers
+        try:                                                                      #make sure only enter the numbers,except error when enter is not a int
             iput = int(input('Please type the selection: '))
         except ValueError:
             print('ERROR: please type in number from 1-4!')
