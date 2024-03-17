@@ -8,6 +8,13 @@ mydb = mysql.connector.connect( #connect to database
     )
 mycursor = mydb.cursor() 
 
+# import firebase_admin
+# from firebase_admin import credentials
+# from firebase_admin import db
+
+# cred = credentials.Certificate("serviceAccountKey.json")
+
+
 def newstudet(studentid, name, phone = 0, email = 0):                       # adding new student
     sql = "INSERT INTO studentname(student_id, name) VALUES (%s, %s)"
     val = (studentid, name)
