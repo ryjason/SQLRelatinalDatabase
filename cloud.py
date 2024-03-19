@@ -6,7 +6,7 @@ cred = credentials.Certificate("serviceAccountKey.json")
 
 firebase_admin.initialize_app(cred,{'databaseURL':'https://camerarental-d3ccd-default-rtdb.firebaseio.com/'})
 
-#save data/insert
+#save data/insert build a new database on firestone
 ref = db.reference('py/')
 users_ref = ref.child('user')
 users_ref.set({
@@ -300,7 +300,7 @@ users_ref.set({
     }
     })
 
-
+#input, insert a new student into the database
 def insert(id, major, contactinfo, name, gpa=0):
     ref = db.reference('py/')
     users_ref = ref.child('user')
@@ -339,11 +339,14 @@ def generateRep(id):
     print(f"""With Student ID: {id} we found student:{data['name']}, his/her phone number is {data['contact']};
         GPA of this student is {data['gpa']}, with major of {data['major']}.""")
 
-
+#dalete the relative data was found with the studentid
 def delete(id):
     db.reference(f'py/user/{id}').delete()
     print('Deleted')
 
+
+
+#call all the functions
 def functionSelections():
     while True:                                                                 #looping the options we have here, qustions.
         print('''
@@ -405,7 +408,7 @@ def main():
     print('Welcome to Student Records Managent system!')
     print('''There are all the options we have for now, 
           ''')
-    functionSelections()                                                                #call function, where all the options will be provided and choice there.
+    functionSelections()                #call function, where all the options will be provided and choice there
 
 
         
